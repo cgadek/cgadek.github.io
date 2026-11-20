@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <!-- CHANGED: a more descriptive title shows up in browser tabs and Google results -->
+    <title>Chauncey Gadek | Biologist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ADDED: the short blurb Google shows under your site's link -->
+    <meta name="description" content="Chauncey Gadek is a biologist using natural history collections, field biology, and computation to study ecology and evolution, especially of Andean birds.">
+    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap.v3.4.1.min.css">
+    <link rel="stylesheet" href="my_CSS_styleFiles/gadek.css">
+    <link rel="stylesheet" href="my_CSS_styleFiles/spartan.css">
+    <script src="JS_CSS_downloaded_libraries/jquery.v3.5.1.min.js"></script>
+    <script src="JS_CSS_downloaded_libraries/bootstrap.v3.4.1.min.js"></script>
+    <!-- CHANGED: removed the old commented-out favicon lines to reduce clutter -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<!--
+  SCROLLSPY FIX: your original file had <body ...></body> on one line, which
+  CLOSED the body immediately, before any of your content. Scrollspy needs
+  the content to be INSIDE the body. The closing </body> now lives at the
+  very bottom of the file, where it belongs.
+-->
+<body data-spy="scroll" data-target="#navbar" data-offset="100" class="scrollspy">
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Chauncey Gadek</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul id="navbar-scrollspy" class="nav navbar-nav navbar-right">
+                <li><a href="#First">Who</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Publications">Pubs</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="https://github.com/cgadek">GitHub</a></li>
+                <li><a href="MyWebApp/map.html">MapTool</a></li>
+                <!-- <li><a href="things/index.html">Thoughts</a></li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div id="First" class="firstDiv"><br><br>
+    <!-- Had to add this line to get text to align where I wanted... -->
+    <!-- (Tip: a CSS padding-top on .firstDiv would replace all these <br> tags. Ask me and I'll show you.) -->
+    <h1 class="center margin text-center">Who</h1><br><br><br><br><br><br>
+    <!-- CHANGED: quotes added around the id value (good habit) -->
+    <h3 id="whoMargin" style="text-align: left;">I am a biologist using natural history collections, field biology, and computation to understand broad ecological and evolutionary patterns. I work across basic and applied domains with research spanning ecotoxicology, population biology, microbial interactions, and trait evolution.</h3>
+</div>
+
+<!-- Second Container -->
+<!--
+  NOTE on links: every link that opens a new tab (target="_blank") now also has
+  rel="noopener". This is a small security/performance best practice.
+  NOTE on images: "alt" text describes the picture for screen readers and shows
+  if the image fails to load. Each one is now unique and descriptive.
+  NOTE: style="max-width:100%" keeps images from overflowing on phones.
+-->
+<div id="Research" class="container-fluid bg-2 text-center">
+    <h2 class="margin">Research</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 id="EG" class="margin_research" style="text-align:left"><strong>Elevational Generalism</strong></h4>
+            <p class="margin_research" style="text-align:left;">Most Andean birds inhabit narrow elevational
+                ranges thought to be set by a combination of biological and environmental factors. Very few species
+                inhabit more than 3,000 meters in
+                elevation. Those that do must compensate for large shifts in
+                temperature, UV exposure, and the partial pressure of oxygen. Are these exceptional species
+                physiologically adapting in the face of gene flow, or are plastic and behavioral
+                responses allowing them to persist across diverse environmental conditions and preventing them from
+                specializing on narrower elevation zones?<br>
+                <br>
+                <!-- CHANGED: fixed the grammar ("In X found" was missing a subject) -->
+                In <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2656.12779"
+                    target="_blank" rel="noopener">Gadek et al. 2017</a> we found that elevational generalists are either in the process of
+                diversifying, expanding across
+                the gradient, or undertaking seasonal or resource-pulse-driven elevational migration, and that
+                elevational generalism is an unstable and transient condition.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/synthesis_figure.png" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Conceptual figure of the three mechanisms that maintain or erode elevational generalists' wide ranges" width="450" height="auto">
+            <p class="caption">Conceptual figure illustrating the three
+                main mechanisms at play in maintaining or eroding elevational generalist's wide ranges.</p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 id="UpDown" class="margin_research" style="text-align:left;"><strong>Evolution of Elevational Ranges</strong></h4>
+            <p class="margin_research" style="text-align:left;">The evolutionary history of neotropical birds has
+                undoubtedly been influenced by
+                Andean uplift, leaving us with current patterns of high diversity and endemism in and around the
+                Andes. These species' modern elevational ranges represent cumulative histories of expansions and contractions in mountains over evolutionary timescales.<br>
+                <br> To anticipate how elevational ranges will respond to climate change in the near term, we must understand how they evolved. To this end, I ask: How did elevational ranges
+                form and change over time? How rapidly have they shifted? Are upward and downward shifts
+                symmetrically distributed across the
+                elevation gradient? And how do patterns of range evolution differ among clades? <br>
+                <br>This work is being done in collaboration
+                with <!-- CHANGED: your LinkedIn link had a long temporary "challengeId" tracking code that will probably stop working. I shortened it; double-check it opens the right profile. -->
+                <a href="https://www.linkedin.com/in/eli-stone" target="_blank" rel="noopener">Eli Stone</a> and <a
+                    href="https://prep.unm.edu/scholars/profile/selina-bauenfeind-2017-2018.html" target="_blank" rel="noopener">Selina
+                    Bauernfeind</a>.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/upsy_downsy_concept_hypothesis.png" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Multi-panel figure describing elevational ranges of neotropical birds: study map, land area by elevation, and range-limit phylogeny" width="450" height="auto">
+            <p class="caption">Study context describing elevational ranges of neotropical birds. (a) map of the study region with an elevation model at 30-second resolution. (b) Land area across the study area in 500-m elevation bins. (c) Upper elevation limits of 2,774 species in this study mapped onto a phylogeny (birdtree.org); avian families of over 100 species are highlighted in red. (d) Lower elevation limits and (e) upper elevation limits of the 2,774 species with median (solid bar) and 25% and 75% quantiles (dashed bars).</p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="margin_research" style="text-align:left;"><strong>Plasticity and Adaptation
+                    During Extreme
+                    Elevational Transitions</strong></h4>
+            <p class="margin_research" style="text-align:left;">Plastic responses to acute changes in elevation are
+                well documented and shared across many vertebrates.
+                Similarly, genetic adaptation to high-elevation environments often acts on predictable physiological
+                pathways. But how do these processes interact, and how do they transition between one another? <br>
+                <br>
+                To ask these questions, we sampled the entire Peruvian range of two co-distributed marsh birds (<a
+                    href="https://birdsoftheworld.org/bow/species/wrlrus1/cur/introduction" target="_blank" rel="noopener">
+                    <i>Phleocryptes melanops</i></a> &amp; <a
+                    href="https://birdsoftheworld.org/bow/species/mcrtyr1/cur/introduction" target="_blank" rel="noopener"><i>Tachuris
+                        rubrigastra</i></a>). These birds have disjunct elevational ranges,
+                inhabiting coastal marshes at sea level and high-elevation marshes above 4000 meters. Are the high
+                elevation populations adapting to the dramatically lower oxygen availability? Or have gene flow
+                and recent colonization failed to suppress short-term acclimatization responses? This work is in
+                collaboration with <a href="https://www.jessiewilliamson.com/" target="_blank" rel="noopener">Jessie
+                    Williamson</a>.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/tachuris.jpeg" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Many-colored Rush Tyrant perched in a marsh in Puerto Viejo, Peru" width="450" height="auto">
+            <p class="caption">Photograph of Many-colored Rush Tyrant (<i>Tachuris rubrigastra</i>) from Puerto
+                Viejo, Peru, in 2016.</p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="margin_research" style="text-align:left;"><strong>Malaria in Sky Islands</strong></h4>
+            <p class="margin_research" style="text-align:left;">Avian malaria is a widespread chronic disease of birds
+                caused by multiple
+                <a href="https://en.wikipedia.org/wiki/Apicomplexa" target="_blank" rel="noopener">Apicomplexan organisms</a>.
+                To understand how host and pathogen communities vary across the landscape, we surveyed birds and
+                parasite communities among
+                Southwestern sky islands and simulated null communities to compare against empirical data. <br><br>We
+                found that parasite communities differed between sky islands relative to null community models,
+                suggesting idiosyncratic colonization and extirpation dynamics. This work is in collaboration with <a
+                    href="https://scholar.google.com/citations?user=qXhTiewAAAAJ&amp;hl=en" target="_blank" rel="noopener">Christopher
+                    Witt</a>,
+                <a href="https://barrowevobio.wixsite.com/lisabarrow" target="_blank" rel="noopener">Lisa Barrow</a>, <a
+                    href="https://www.jessiewilliamson.com/" target="_blank" rel="noopener">Jessie Williamson</a>, <a
+                    href="https://prep.unm.edu/scholars/profile/selina-bauenfeind-2017-2018.html" target="_blank" rel="noopener">Selina
+                    Bauernfeind</a>, and <a href="https://www.researchgate.net/profile/Rosario_Marroquin-Flores2"
+                    target="_blank" rel="noopener">Rosario
+                    Marroquin-Flores</a>.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/malaria.png" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Plots of observed versus expected Jaccard index values for parasite communities on two sky islands" width="450" height="auto">
+            <p class="caption">Figure modified from <a
+                    href="https://link.springer.com/article/10.1007/s00442-021-04854-6" target="_blank" rel="noopener">Barrow et
+                    al.
+                    2021</a> showing observed (dashed lines) and expected Jaccard Index values. Expected values
+                obtained from 10,000 randomly simulated communities. Illustrates how observed communities in two "sky
+                islands" differ from expectations.</p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="margin_research" style="text-align:left;"><strong>Tracheal Evolution in Sandhill Cranes</strong></h4>
+            <!-- CHANGED: added the missing semicolon after text-align:left -->
+            <p class="margin_research" style="text-align:left;">The sandhill crane (<a
+                    href="https://birdsoftheworld.org/bow/species/sancra/cur/introduction" target="_blank" rel="noopener"><i>Grus
+                        canadensis</i></a>) is among the few bird species that
+                exhibit tracheal elongation. Within this species, there is substantial size dimorphism between
+                subspecies. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jeb.12397" target="_blank" rel="noopener">Jones &amp;
+                    Witt 2014</a> found that the
+                smaller subspecies that undertake longer distance migrations had proportionally longer trachea,
+                hypothesized to make smaller birds sound bigger.
+                I am interested in assessing the symmetry and strength of sexual dimorphism within sandhill cranes.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/Crane_trachea.webp" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Sandhill crane trachea coiled within the sternum" width="450" height="auto">
+            <p class="caption">Photo of sandhill crane trachea coiled within the bird's sternum.</p>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="margin_research" style="text-align:left;"><strong>Evolutionary and ecological drivers of microbe-host associations in the lung mycobiomes of birds</strong></h4>
+            <p class="margin_research" style="text-align:left;">Microbiomes are being published at a rapid pace. Yet
+                wild
+                bird microbiomes and specifically their fungal components
+                (mycobiomes) are largely undescribed. Furthermore, how microbiomes are structured by phylogenetic, geographic, and life history traits
+                remains understudied.
+                Baseline knowledge of the makeup of these communities and factors that affect their assembly and
+                maintenance holds important implications for disease ecology, public health, and large-scale
+                coevolutionary processes. <br><br>We are describing the first lung mycobiomes of birds
+                and modeling the associations of phylogeny, morphology, and ecology with lung fungal communities. This
+                project is in collaboration with <a href="https://parisshamm.wixsite.com/research" target="_blank" rel="noopener">Paris
+                    Hamm</a> &amp; <a href="https://scholar.google.com/citations?user=GfsQ9usAAAAJ&amp;hl=en"
+                    target="_blank" rel="noopener">Michael
+                    Mann</a> utilizing samples collected and stored in the <a href="http://www.msb.unm.edu/"
+                    target="_blank" rel="noopener">Museum of Southwestern Biology</a>.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/gdm_compositional_n100.png" align="left" class="img_research_margin"
+                style="display:inline; border:2px solid black; max-width:100%;" alt="Generalized dissimilarity model curves showing predictors of lung fungal community dissimilarity" width="450" height="auto">
+            <p class="caption">Global (dashed lines) and subsampled (solid lines) generalized dissimilarity models showing geographic, morphological,
+            and phylogenetic predictors of fungal community dissimilarity. Figure shows (height of lines) that phylogenetic
+            distance, hand-wing index, and maximum latitude of bird hosts explain the most dissimilarity among lung fungal communities.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="Publications" class="container-fluid bg-3 text-center">
+    <h2 class="margin">Publications</h2><br>
+    <div id="citations" class="row">
+        <!--
+          LIST FIX: In HTML, every <li> needs a closing </li>, and an <ol> may
+          only contain <li> items directly. The <br> tags that sat between your
+          items were invalid, and the first item was never closed. I removed the
+          <br>s; if you want more space between entries, add this to your CSS:
+              #citations li { margin-bottom: 1em; }
+        -->
+        <ol>
+            <li>
+                <a href="https://doi.org/10.1371/journal.pone.0336856" target="_blank" rel="noopener">Per-and polyfluoroalkyl substances (PFAS) in fish collected from the Rio Grande and reservoirs in northern New Mexico. Clements, J., Stanek, J., Conrad, C., Celmer, J., Mora, H., Jones, Z., Gallegos, K., <strong>Gadek, C.</strong> and Gaukler, S., 2025. Plos one, 20(11), p.e0336856.
+            </li>
+            <li>
+                <a href="https://doi.org/10.3390/biology14060597" target="_blank" rel="noopener">Fire and Drought Affect Multiple Aspects of Diversity in a Migratory Bird Stopover Community. Stanek, J. E., <strong>Gadek, C. R.</strong>, Milligan, S. E., Thompson, B. E., Tranquillo, K. A., Trader, L. L., Hathcock, C. D., & Fettig, S. M. (2025). Biology, 14(6), 597. https://doi.org/10.3390/biology14060597
+
+            </li>
+             <li>
+                <a href="https://doi.org/10.1016/j.envres.2025.121872" target="_blank" rel="noopener">Ecosystem-wide PFAS characterization and environmental behavior at a heavily contaminated desert oasis in the southwestern U.S.</a>
+                Jean-Luc E. Cartron, <strong>Chauncey R. Gadek</strong>, Jonathan L. Dunnum, Christopher C. Witt, Mariel L. Campbell, Samuel J. Romero, Andrew B. Johnson, Julie Kutz, Christopher Wolf, Sarah J. Choyke, Joseph A. Cook. 2025. Environmental Research, Volume 279, Part 2, https://doi.org/10.1016/j.envres.2025.121872.
+            </li>
+            <li>
+                <a href="https://assets-eu.researchsquare.com/files/rs-5214380/v1/edf129e5-cceb-4c90-9082-ec72545683e9.pdf?c=1728895163"
+                    target="_blank" rel="noopener">The avian lung mycobiome: phylogenetic and ecological drivers of lung-fungal communities and their potential pathogens.</a>
+                Salazar-Hamm, P.S. ‡, <strong>Gadek, C.R.</strong>‡, Mann, M. A., Steinberg, M, Montoya, K. M., Behnia, M., Gyllenhaal, E. F., Brady, S. S., Takano, O. M., Williamson, J. L., Witt, C. C., and Natvig, D.O. ‡Equal contributions. 2025. Communications Biology 8, 634.
+                <a href="https://assets-eu.researchsquare.com/files/rs-5214380/v1/edf129e5-cceb-4c90-9082-ec72545683e9.pdf?c=1728895163"
+                    target="_blank" rel="noopener">Preprint</a>
+            </li>
+            <li>
+                <a href="https://www.biorxiv.org/content/10.1101/2024.07.03.601580v3"
+                    target="_blank" rel="noopener">Taxonomy, nomenclature, and identification of the giant hummingbirds (<i>Patagona</i> spp.) (Aves: Trochilidae).</a>
+                Jessie L Williamson, <strong>Chauncey R Gadek</strong>, Bryce W Robinson, Emil Bautista, Selina M Bauernfeind, Matthew J Baumann, Ethan F Gyllenhaal, Peter P Marra, Natalia Ricote, Nadia D Singh, Thomas Valqui, Christopher C Witt. Zoological Journal of the Linnean Society, Volume 204, Issue 2, June 2025, zlaf036, https://doi.org/10.1093/zoolinnean/zlaf036
+                <a href="https://www.biorxiv.org/content/10.1101/2024.07.03.601580v3"
+                    target="_blank" rel="noopener">Preprint</a>
+            </li>
+            <li>
+                <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2313599121"
+                    target="_blank" rel="noopener">Extreme elevational migration spurred cryptic
+                    speciation in giant hummingbirds.</a>
+                Williamson, J.L., Gyllenhaal, E.F., Bauernfeind, S.M., Bautista, E., Baumann, M.J., <strong>Gadek, C.R.</strong>, Marra, P.P.,
+                Ricote, N., Valqui, T., Bozinovic, F. and Singh, N.D., 2024. Proceedings of the National Academy of Sciences, 121(21), p.e2313599121.
+                <a href="https://drive.google.com/file/d/1UQZEV5tsEmkN4Urdp6u6XkUZKvN8Y3a6/view?usp=drive_link"
+                    target="_blank" rel="noopener">PDF</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/38325785/"
+                    target="_blank" rel="noopener">Extraordinary levels of per- and poly-fluoroalkyl substances (PFAS) in vertebrate animal tissues at a New Mexico desert oasis: multiple pathways for wildlife and human exposure.</a>
+                Witt, CC, <strong>CR Gadek</strong>, J-L Cartron, MJ Andersen, ML Campbell, M Castro-Farías, EF Gyllenhaal,
+                AB Johnson, J Malaney, KN Montoya, A Patterson, NT Vinciguerra, JL Williamson, JA Cook, and
+                JL Dunnum (2024). Environmental Research 249: 118229.
+                <a href="https://drive.google.com/drive/folders/1sNKha4-R2gX5dUtBQse0fVlO4yNthb6b"
+                    target="_blank" rel="noopener">PDF</a>
+            </li>
+            <li>
+                <a href="https://boletinunop.weebly.com/uploads/6/2/2/6/62265985/lessoniarufa.pdf"
+                    target="_blank" rel="noopener">First record of Austral Negrito
+                    (<i>Lessonia rufa</i>) for Peru.</a>
+                Schmidt, CJ, <strong>Gadek, CR</strong>, Bautista, E, Segura, M, Witt, CC, 2023. Boletín UNOP Vol 18. N° 1.
+                <!-- TODO: this PDF link is IDENTICAL to the giant hummingbird PNAS paper's PDF link above. Almost certainly a copy/paste mistake; replace it with the correct Drive link or delete it. -->
+                <a href="https://drive.google.com/file/d/19vAOv4b81aYYP2ZygCh1t8UYNXTGk_CT/view?usp=sharing"
+                    target="_blank" rel="noopener">PDF</a>
+            </li>
+            <li>
+                <!-- CHANGED: added the missing space between the href and target attributes -->
+                <a href="https://www.journals.uchicago.edu/doi/epdf/10.1086/723222" target="_blank" rel="noopener">Blood variation implicates respiratory limits on elevational ranges of Andean birds.</a>
+                Ethan Linck, Jessie L. Williamson, Emil Bautista, Elizabeth J. Beckman, Phred M. Benham,
+                Shane G. DuBay, L. Mónica Flores, <strong>Chauncey R. Gadek</strong>, Andrew B. Johnson, Matthew R. Jones,
+                Jano Núñez-Zapata, Alessandra Quiñonez, C. Jonathan Schmitt, Dora Susanibar, Jorge Tiravanti C.,
+                Karen Verde-Guerra, Natalie A. Wright, Thomas Valqui, Jay F. Storz, and Christopher C. Witt.
+                The American Naturalist (2023) 201:5, 741-754.
+            </li>
+            <li>
+                <a href="https://doi.org/10.1111/btp.13154"
+                    target="_blank" rel="noopener">Intra- and interspecific nest stacking in marsh-dwelling songbirds.</a>
+                <strong>Gadek, C. R.</strong>, Williamson, J. L., &amp; Witt, C. C. (2022). Biotropica, 54, 1131–1136.
+            </li>
+            <li>
+                <a href="https://doi.org/10.1007/s00442-021-04854-6"
+                    target="_blank" rel="noopener">Comparing community composition despite incomplete sampling and uneven abundance: a case study of sky-island
+                    haemosporidian parasites.</a>
+                Barrow, L. N., S. M. Bauernfeind, P. A. Cruz, J. L. Williamson, D. L. Wiley, J. E. Ford, M. J. Baumann,
+                S. S. Brady, A. N. Chavez, <strong>C. R. Gadek</strong>, S. C. Galen, A. B. Johnson, X. M. Mapel, R. A.
+                Marroquin-Flores, T. E. Martinez, J. M. McCullough, J. McLaughlin, and C. C. Witt. 2021. Oecologia.
+                <!-- TODO: this said "In Press". If it has since been published, add the volume and page numbers. -->
+            </li>
+            <li>
+                <a href="https://doi.org/10.1111/1365-2656.12779"
+                    target="_blank" rel="noopener">Why are tropical mountain passes “low” for some species? Genetic and stable-isotope tests for
+                    differentiation, migration and expansion in elevational generalist songbirds.</a>
+                <strong>Gadek, C. R.</strong>, S. D. Newsome, E. J. Beckman, A. N. Chavez, S. C. Galen, E. Bautista &amp; C. C. Witt.
+                2017. Journal of Animal Ecology, 87: 741-753.
+            </li>
+            <li>
+                <a href="https://doi.org/10.7717/peerj.3700"
+                    target="_blank" rel="noopener">Diversity, abundance, and host relationships of avian malaria and related haemosporidians in New Mexico pine
+                    forests.</a>
+                Marroquin-Flores, R. A., J. L. Williamson, A. N. Chavez, S. M. Bauernfeind, M. J. Baumann, <strong>C. R.
+                Gadek</strong>, A. B. Johnson, J. M. McCullough, C. C. Witt, &amp; L. N. Barrow. 2017. PeerJ, 5: e3700.
+            </li>
+            <li>
+                <a href="https://doi.org/10.1002/bmb.20950"
+                    target="_blank" rel="noopener">An undergraduate laboratory class using CRISPR/Cas9 technology to mutate <i>Drosophila</i> genes.</a>
+                Adame, Vanesa; Chapapas, Holly; Cisneros, Marilyn; Deaton, Carol; Deichmann, Sophia; <strong>Gadek,
+                Chauncey</strong>; Lovato, TyAnna L; Chechenova, Maria B; Guerin, Paul; Cripps, Richard M; 2016. Biochemistry and
+                Molecular Biology Education, 44, 3: 263-275.
+            </li>
+        </ol>
+    </div>
+</div>
+
+<!-- Fourth Container -->
+<div id="CV" class="container-fluid bg-4 text-center">
+    <h2 class="margin">CV</h2>
+    <div id="CV_align" class="row">
+        <!--
+          CHANGED: the width was a fixed 1000px, which overflows on phones.
+          Now it is 100% wide up to a maximum of 1000px, and a little taller.
+          NOTE: many phones (iPhones especially) can't display an embedded PDF
+          at all, so the "Download CV" link below matters. The text inside the
+          <embed> is not used, so I moved a fallback message to the <p> below.
+        -->
+        <embed src="images/CRG_Academic_CV_November_2024.pdf#toolbar=0" type="application/pdf"
+            class="img-responsive margin"
+            style="width:100%; max-width:1000px; height:600px;">
+    </div>
+    <!-- CHANGED: download="newfilename" would have saved the file with that literal name -->
+    <a href="./images/CRG_Academic_CV_2026.pdf" download="Chauncey_Gadek_CV.pdf">Download CV</a>
+</div>
+
+<!-- Footer -->
+<footer id="footerDiv" class="container-fluid bg-6 text-center">
+    <p><strong>Contact: cgadek[at]gmail.com</strong> <br><br><br> modified Bootstrap Theme made by <a
+            href="https://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+
+</body>
+
+</html>
